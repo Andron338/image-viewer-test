@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E647F7492593E51400A7574C /* ImageViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647F7482593E51400A7574C /* ImageViewerViewModel.swift */; };
 		E6EDC90A2593C667004E20BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDC9092593C667004E20BA /* AppDelegate.swift */; };
-		E6EDC90E2593C667004E20BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDC90D2593C667004E20BA /* ViewController.swift */; };
-		E6EDC9112593C667004E20BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDC90F2593C667004E20BA /* Main.storyboard */; };
+		E6EDC90E2593C667004E20BA /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDC90D2593C667004E20BA /* ImageViewerViewController.swift */; };
+		E6EDC9112593C667004E20BA /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDC90F2593C667004E20BA /* ImageViewer.storyboard */; };
 		E6EDC9132593C669004E20BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EDC9122593C669004E20BA /* Assets.xcassets */; };
 		E6EDC9162593C669004E20BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDC9142593C669004E20BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E647F7482593E51400A7574C /* ImageViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewModel.swift; sourceTree = "<group>"; };
 		E6EDC9062593C667004E20BA /* Image viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EDC9092593C667004E20BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6EDC90D2593C667004E20BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6EDC9102593C667004E20BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6EDC90D2593C667004E20BA /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
+		E6EDC9102593C667004E20BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ImageViewer.storyboard; sourceTree = "<group>"; };
 		E6EDC9122593C669004E20BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6EDC9152593C669004E20BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6EDC9172593C669004E20BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E647F74B2593E54700A7574C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E6EDC90F2593C667004E20BA /* ImageViewer.storyboard */,
+				E6EDC90D2593C667004E20BA /* ImageViewerViewController.swift */,
+				E647F7482593E51400A7574C /* ImageViewerViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E647F7532593E8D800A7574C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E6EDC9092593C667004E20BA /* AppDelegate.swift */,
+				E6EDC9122593C669004E20BA /* Assets.xcassets */,
+				E6EDC9142593C669004E20BA /* LaunchScreen.storyboard */,
+				E6EDC9172593C669004E20BA /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E68DAE742594023500042B6E /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E647F74B2593E54700A7574C /* Main */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
 		E6EDC8FD2593C667004E20BA = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +85,8 @@
 		E6EDC9082593C667004E20BA /* Image viewer */ = {
 			isa = PBXGroup;
 			children = (
-				E6EDC9092593C667004E20BA /* AppDelegate.swift */,
-				E6EDC90D2593C667004E20BA /* ViewController.swift */,
-				E6EDC90F2593C667004E20BA /* Main.storyboard */,
-				E6EDC9122593C669004E20BA /* Assets.xcassets */,
-				E6EDC9142593C669004E20BA /* LaunchScreen.storyboard */,
-				E6EDC9172593C669004E20BA /* Info.plist */,
+				E68DAE742594023500042B6E /* Flow */,
+				E647F7532593E8D800A7574C /* Supporting files */,
 			);
 			path = "Image viewer";
 			sourceTree = "<group>";
@@ -123,7 +150,7 @@
 			files = (
 				E6EDC9162593C669004E20BA /* LaunchScreen.storyboard in Resources */,
 				E6EDC9132593C669004E20BA /* Assets.xcassets in Resources */,
-				E6EDC9112593C667004E20BA /* Main.storyboard in Resources */,
+				E6EDC9112593C667004E20BA /* ImageViewer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6EDC90E2593C667004E20BA /* ViewController.swift in Sources */,
+				E647F7492593E51400A7574C /* ImageViewerViewModel.swift in Sources */,
+				E6EDC90E2593C667004E20BA /* ImageViewerViewController.swift in Sources */,
 				E6EDC90A2593C667004E20BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,12 +170,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E6EDC90F2593C667004E20BA /* Main.storyboard */ = {
+		E6EDC90F2593C667004E20BA /* ImageViewer.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E6EDC9102593C667004E20BA /* Base */,
 			);
-			name = Main.storyboard;
+			name = ImageViewer.storyboard;
 			sourceTree = "<group>";
 		};
 		E6EDC9142593C669004E20BA /* LaunchScreen.storyboard */ = {
@@ -284,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TGC4Z5AZY;
-				INFOPLIST_FILE = "Image viewer/Info.plist";
+				INFOPLIST_FILE = "Image viewer/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TGC4Z5AZY;
-				INFOPLIST_FILE = "Image viewer/Info.plist";
+				INFOPLIST_FILE = "Image viewer/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
