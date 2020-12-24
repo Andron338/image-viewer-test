@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E647F7492593E51400A7574C /* ImageViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647F7482593E51400A7574C /* ImageViewerViewModel.swift */; };
+		E68DAE79259404FA00042B6E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DAE77259404FA00042B6E /* ImageTableViewCell.swift */; };
+		E68DAE7A259404FA00042B6E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68DAE78259404FA00042B6E /* ImageTableViewCell.xib */; };
+		E68DAE7E259419AF00042B6E /* ImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DAE7D259419AF00042B6E /* ImageCellViewModel.swift */; };
 		E6EDC90A2593C667004E20BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDC9092593C667004E20BA /* AppDelegate.swift */; };
 		E6EDC90E2593C667004E20BA /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDC90D2593C667004E20BA /* ImageViewerViewController.swift */; };
 		E6EDC9112593C667004E20BA /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDC90F2593C667004E20BA /* ImageViewer.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		E647F7482593E51400A7574C /* ImageViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewModel.swift; sourceTree = "<group>"; };
+		E68DAE77259404FA00042B6E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		E68DAE78259404FA00042B6E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		E68DAE7D259419AF00042B6E /* ImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellViewModel.swift; sourceTree = "<group>"; };
 		E6EDC9062593C667004E20BA /* Image viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EDC9092593C667004E20BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6EDC90D2593C667004E20BA /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,7 @@
 				E6EDC90F2593C667004E20BA /* ImageViewer.storyboard */,
 				E6EDC90D2593C667004E20BA /* ImageViewerViewController.swift */,
 				E647F7482593E51400A7574C /* ImageViewerViewModel.swift */,
+				E68DAE76259404CE00042B6E /* ImageTableViewCell */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -64,6 +71,16 @@
 				E647F74B2593E54700A7574C /* Main */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		E68DAE76259404CE00042B6E /* ImageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E68DAE78259404FA00042B6E /* ImageTableViewCell.xib */,
+				E68DAE77259404FA00042B6E /* ImageTableViewCell.swift */,
+				E68DAE7D259419AF00042B6E /* ImageCellViewModel.swift */,
+			);
+			path = ImageTableViewCell;
 			sourceTree = "<group>";
 		};
 		E6EDC8FD2593C667004E20BA = {
@@ -149,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6EDC9162593C669004E20BA /* LaunchScreen.storyboard in Resources */,
+				E68DAE7A259404FA00042B6E /* ImageTableViewCell.xib in Resources */,
 				E6EDC9132593C669004E20BA /* Assets.xcassets in Resources */,
 				E6EDC9112593C667004E20BA /* ImageViewer.storyboard in Resources */,
 			);
@@ -161,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68DAE7E259419AF00042B6E /* ImageCellViewModel.swift in Sources */,
 				E647F7492593E51400A7574C /* ImageViewerViewModel.swift in Sources */,
+				E68DAE79259404FA00042B6E /* ImageTableViewCell.swift in Sources */,
 				E6EDC90E2593C667004E20BA /* ImageViewerViewController.swift in Sources */,
 				E6EDC90A2593C667004E20BA /* AppDelegate.swift in Sources */,
 			);

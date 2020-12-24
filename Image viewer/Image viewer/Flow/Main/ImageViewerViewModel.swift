@@ -8,5 +8,9 @@
 import Foundation
 
 class ImageViewerViewModel {
+    var dataSource: [ImageTableViewCell.CellViewModel]
     
+    init() {
+        dataSource = []
+    }
 }
